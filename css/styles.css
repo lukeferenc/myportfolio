@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-main: rgb(216, 100, 23);
+  --bs-main: rgb(0, 51, 102);
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -33,7 +33,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   /* --bs-primary: #1abc9c; */
-  --bs-primary: #df6016;
+  --bs-primary: #003366;
   --bs-primary-hover: #2c78ab;
   --bs-secondary: #2c3e50;
   --bs-success: #198754;
@@ -44,7 +44,7 @@
   --bs-dark: #212529;
   /* default greeb color */
   /* --bs-primary-rgb: 26, 188, 156; */
-  --bs-primary-rgb: 216, 100, 23;
+  --bs-primary-rgb: 0, 51, 102;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;

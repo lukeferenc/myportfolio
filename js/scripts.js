@@ -51,4 +51,14 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Keyboard open for project cards
+    document.querySelectorAll('.project-card[data-bs-toggle="modal"]').forEach((card) => {
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                card.click();
+            }
+        });
+    });
+
 });

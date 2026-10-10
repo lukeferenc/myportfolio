@@ -220,7 +220,7 @@ a {
 
 @media (min-width: 900px) {
   .project {
-    grid-template-columns: 1.25fr 0.9fr;
+    grid-template-columns: 1.45fr 0.85fr;
     align-items: center;
     gap: 3rem;
   }
@@ -241,28 +241,32 @@ a {
   background: var(--bg-deep);
   box-shadow: var(--shadow);
   text-decoration: none;
+  aspect-ratio: 16 / 10;
 }
 
 .project__media img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
+  display: block;
   object-fit: cover;
   object-position: top center;
   transition: transform 0.7s var(--ease);
 }
 
-.project__media--contain {
-  background: #faf7f8;
+#aestra .project__media {
+  background: #f7f2f4;
 }
 
-.project__media--contain img {
-  object-fit: contain;
-  object-position: center;
-  padding: 0.75rem;
+#aestra .project__media img {
+  object-position: center top;
+}
+
+#myflix .project__media img {
+  object-position: top center;
 }
 
 .project__media:hover img {
-  transform: scale(1.035);
+  transform: scale(1.03);
 }
 
 .project__media--placeholder {

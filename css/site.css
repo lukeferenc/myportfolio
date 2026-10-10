@@ -439,8 +439,20 @@ a {
   }
 }
 
-@media (max-width: 640px) {
-  .nav a:nth-child(2) {
-    display: none;
+@media (max-width: 420px) {
+  .site-header {
+    padding-inline: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    gap: 0.85rem;
+  }
+
+  .nav a {
+    font-size: 0.85rem;
   }
 }

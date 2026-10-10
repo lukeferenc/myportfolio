@@ -2,387 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Luke P.F. Pons — full-stack developer. Portfolio featuring Aestra, Angular, React, and React Native projects." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Luke P.F. Pons — full-stack developer. Selected work including Aestra and myFlix." />
   <meta name="author" content="Luke P.F. Pons" />
-  <title>Luke P.F. Pons — Portfolio</title>
+  <title>Luke P.F. Pons</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" />
-  <link href="css/custom.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
 </head>
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">Luke P.F. Pons</a>
-      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Work</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#resume">Resume</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
 
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-      <img class="masthead-avatar mb-5" src="assets/img/lpons2.jpg" alt="Portrait of Luke P.F. Pons" />
-      <h1 class="masthead-heading mb-0">Luke P.F. Pons</h1>
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="bi bi-code-square"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-      <p class="masthead-subheading font-weight-light mb-0">
-        Full-stack developer building clear products on solid infrastructure — most recently Aestra &amp; CycleBench for women’s hormonal health.
-      </p>
-      <div class="hero-actions">
-        <a class="btn-hero btn-hero-primary" href="#portfolio">See the work</a>
-        <a class="btn-hero btn-hero-ghost" href="mailto:luke.peter.pons@gmail.com">Email me</a>
-      </div>
-    </div>
+  <header class="site-header">
+    <a class="logo" href="#top">Luke P.F. Pons</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="page-section portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="page-section-heading text-center text-secondary mb-0">Selected work</h2>
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="bi bi-activity" style="font-size: 2rem;"></i></div>
-        <div class="divider-custom-line"></div>
+  <main id="top">
+    <section class="hero reveal">
+      <p class="hero__eyebrow">Full-stack developer</p>
+      <h1 class="hero__name">Luke P.F. Pons</h1>
+      <p class="hero__lede">
+        I build clear products on solid infrastructure —
+        from research-backed health tools to polished web apps.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#work">Selected work</a>
+        <a class="btn btn--ghost" href="mailto:luke.peter.pons@gmail.com">Email</a>
       </div>
-      <div class="row g-4 justify-content-center">
+    </section>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card project-card--featured" data-bs-toggle="modal" data-bs-target="#portfolioModal1" role="button" tabindex="0">
-            <div class="project-card__media">
-              <img src="assets/img/aestra.jpg" alt="Aestra soft-read product interface" />
-              <div class="project-card__overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Aestra</h3>
-              <p class="project-card__stack">Python · FastAPI · CycleBench · Model-pFL</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal2" role="button" tabindex="0">
-            <div class="project-card__media">
-              <img src="assets/img/MyflixAng.JPG" alt="Angular MyFlix movie client screenshot" />
-              <div class="project-card__overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Angular MyFlix</h3>
-              <p class="project-card__stack">Angular · TypeScript · Angular Material</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal3" role="button" tabindex="0">
-            <div class="project-card__media">
-              <img src="assets/img/Meet.JPG" alt="Meet progressive web app screenshot" />
-              <div class="project-card__overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Meet</h3>
-              <p class="project-card__stack">React · PWA · Google Calendar API · TDD</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal4" role="button" tabindex="0">
-            <div class="project-card__media">
-              <img src="assets/img/Chatz.jpg" alt="Chatz React Native chat app screenshot" />
-              <div class="project-card__overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Chatz</h3>
-              <p class="project-card__stack">React Native · Firebase · Expo</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal5" role="button" tabindex="0">
-            <div class="project-card__media">
-              <img src="assets/img/Pokedex.JPG" alt="Pokédex JavaScript app screenshot" />
-              <div class="project-card__overlay" aria-hidden="true"><i class="fas fa-plus"></i></div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Pokédex</h3>
-              <p class="project-card__stack">JavaScript · HTML · CSS · REST API</p>
-            </div>
-          </div>
-        </div>
-
+    <section class="work" id="work">
+      <div class="section-head reveal">
+        <p class="eyebrow">Work</p>
+        <h2>Selected projects</h2>
       </div>
-    </div>
-  </section>
 
-  <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container">
-      <h2 class="page-section-heading text-center text-white">About</h2>
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fa-solid fa-person"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-      <div class="about-grid">
-        <div>
-          <h3>Background</h3>
-          <p class="lead">
-            Hospitality taught me to stay calm under pressure, run booking systems, and get the best out of a team on busy nights.
-            I moved into web development through Career Foundry’s full-stack bootcamp, then kept building — including Aestra, an appointment-prep soft read on open CycleBench infrastructure for women’s hormonal health.
-          </p>
-        </div>
-        <div>
-          <h3>What I’m after</h3>
-          <p class="lead">
-            I want to turn that mix of product sense and engineering into full-time work: clear UIs, honest systems, and teams that care about craft.
-            I’m happiest when I’m learning next to strong developers and shipping things people can actually use.
-          </p>
-        </div>
-        <div>
-          <h3>Off the clock</h3>
-          <p class="lead">
-            I travel whenever I can — backpacking in the Alps, or a spontaneous cheap flight for pizza in Naples.
-            Closer to home: books, football with friends, working out, and the odd video game.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section bg-white text-black mb-0" id="resume">
-    <div class="container">
-      <h2 class="page-section-heading text-center text-secondary mb-0">Resume</h2>
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="bi bi-file-earmark-person" style="font-size: 2rem;"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-      <div class="resume-panel">
-        <p>One page PDF — experience, skills, and education.</p>
-        <a class="btn btn-xl btn-resume" href="assets/Resume.pdf" download="Luke-Pons-Resume.pdf">
-          <i class="fas fa-download me-2"></i>
-          Download resume
+      <article class="project reveal" id="aestra">
+        <a class="project__media project__media--contain" href="https://aestra-nw6b.onrender.com/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/aestra-home.jpg?v=2" alt="Aestra home — your story, one clear brief" width="1200" height="900" />
         </a>
-      </div>
-    </div>
-  </section>
+        <div class="project__body">
+          <p class="project__index">01</p>
+          <h3>Aestra</h3>
+          <p class="project__stack">Python · FastAPI · CycleBench · Model-pFL</p>
+          <p class="project__text">
+            Built for a hackathon competition: an appointment-ready soft read
+            for women’s hormonal health. Chip intake on CycleBench —
+            models estimate, the LLM only phrases.
+          </p>
+          <div class="project__links">
+            <a href="https://aestra-nw6b.onrender.com/" target="_blank" rel="noopener noreferrer">Live site</a>
+            <a href="https://github.com/lukeferenc/Aestra" target="_blank" rel="noopener noreferrer">Repository</a>
+          </div>
+        </div>
+      </article>
 
-  <footer class="footer text-center" id="contact">
-    <div class="container">
-      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact</h2>
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="bi bi-envelope-heart text-white"></i></div>
-        <div class="divider-custom-line"></div>
+      <article class="project project--flip reveal" id="myflix">
+        <a class="project__media" href="https://lukeferenc.github.io/myFlix-Angular-client2/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/myflix.png?v=2" alt="myFlix film catalog with poster grid" width="1200" height="750" />
+        </a>
+        <div class="project__body">
+          <p class="project__index">02</p>
+          <h3>myFlix</h3>
+          <p class="project__stack">Angular · TypeScript · Express · JWT</p>
+          <p class="project__text">
+            Movie catalog with favorites, director and genre detail, and a
+            Letterboxd-leaning UI over a rebuilt API with a 40-title seed.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/lukeferenc/myFlix-Angular-client2" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="https://lukeferenc.github.io/myFlix-Angular-client2/" target="_blank" rel="noopener noreferrer">Live site</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal project--wip" id="threekingdoms">
+        <div class="project__media project__media--placeholder" aria-hidden="true">
+          <span>Three Kingdoms</span>
+        </div>
+        <div class="project__body">
+          <p class="project__index">03</p>
+          <p class="pill">In progress</p>
+          <h3>Three Kingdoms</h3>
+          <p class="project__stack">HTML · CSS · JS</p>
+          <p class="project__text">
+            A clearer overview of Three Kingdoms heroes — structure and browsing first,
+            polish next. Coming to this page when it’s ready to show.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/lukeferenc/ThreeKingdoms" target="_blank" rel="noopener noreferrer">Repository</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__grid reveal">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Product sense, then the plumbing.</h2>
+        </div>
+        <div class="about__copy">
+          <p>
+            Hospitality taught me calm under pressure. Career Foundry got me into full-stack web.
+            Lately I’ve been shipping Aestra on CycleBench, and tightening the craft on older apps like myFlix.
+          </p>
+          <p>
+            I’m looking for teams where clear UX and honest engineering sit in the same room.
+          </p>
+          <a class="text-link" href="assets/Resume.pdf" download="Luke-Pons-Resume.pdf">Download resume</a>
+        </div>
       </div>
-      <p class="contact-blurb">Open to roles, collaborations, and questions about the work above.</p>
-      <div>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/lukeferenc" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-fw fa-github"></i></a>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/luke-pons-850216206" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
-        <a class="btn btn-outline-light btn-social mx-1" href="mailto:luke.peter.pons@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Say hello</h2>
+        <p>Open to roles, collaborations, and questions about the work above.</p>
+        <a class="btn btn--solid" href="mailto:luke.peter.pons@gmail.com">luke.peter.pons@gmail.com</a>
+        <div class="contact__social">
+          <a href="https://github.com/lukeferenc" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/luke-pons-850216206" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
-      <a class="contact-email" href="mailto:luke.peter.pons@gmail.com">luke.peter.pons@gmail.com</a>
-    </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© Luke P.F. Pons 2026</span>
   </footer>
 
-  <div class="copyright py-4 text-center text-white">
-    <div class="container"><small>© Luke P.F. Pons 2026</small></div>
-  </div>
-
-  <!-- Modal: Aestra -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal1Label">Aestra</h2>
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <img class="img-fluid rounded mb-3" src="assets/img/aestra.jpg" alt="Aestra soft-read interface" />
-                <p class="modal-tech">Python · FastAPI · CycleBench · Model-pFL · optional OpenAI phrasing</p>
-                <div class="mb-3">
-                  <a class="btn btn-primary me-1" href="https://github.com/lukeferenc/Aestra" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Repo</a>
-                </div>
-                <p class="mb-4 text-start">
-                  Chip-based intake that turns cycle timing and symptoms into an appointment-ready soft read.
-                  Underneath sits CycleBench — schema, deterministic engine, audit, open NHANES export, and a personalized phase model —
-                  so the LLM only phrases language and never invents findings. Built for the Hack-Nation women’s hormonal health challenge.
-                </p>
-                <button class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Angular MyFlix -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal2Label">Angular MyFlix</h2>
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <a href="https://lukeferenc.github.io/myFlix-Angular-client2/" target="_blank" rel="noopener noreferrer">
-                  <img class="img-fluid rounded mb-3" src="assets/img/MyflixAng.JPG" alt="Angular MyFlix client" />
-                </a>
-                <p class="modal-tech">Angular · TypeScript · Angular Material · Movies API</p>
-                <div class="mb-3">
-                  <a class="btn btn-primary me-1" href="https://github.com/lukeferenc/myFlix-Angular-client2" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Repo</a>
-                  <a class="btn btn-primary" href="https://lukeferenc.github.io/myFlix-Angular-client2/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Live site</a>
-                </div>
-                <p class="mb-4 text-start">
-                  Client-side movie app on Angular. Users can browse film details and manage a favorites list against a Movies API,
-                  with UI built on Angular Material.
-                </p>
-                <button class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Meet -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal3Label">Meet</h2>
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <a href="https://lukeferenc.github.io/meet/" target="_blank" rel="noopener noreferrer">
-                  <img class="img-fluid rounded mb-3" src="assets/img/Meet.JPG" alt="Meet app" />
-                </a>
-                <p class="modal-tech">React · Progressive Web App · Google Calendar API · TDD</p>
-                <div class="mb-3">
-                  <a class="btn btn-primary me-1" href="https://github.com/lukeferenc/meet/" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Repo</a>
-                  <a class="btn btn-primary" href="https://lukeferenc.github.io/meet/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Live site</a>
-                </div>
-                <p class="mb-4 text-start">
-                  Serverless progressive web app built with React using test-driven development.
-                  Pulls upcoming events from the Google Calendar API.
-                </p>
-                <button class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Chatz -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal4Label">Chatz</h2>
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <img class="img-fluid rounded mb-3" src="assets/img/Chatz.jpg" alt="Chatz mobile chat app" />
-                <p class="modal-tech">React Native · Firebase · Expo · iOS &amp; Android</p>
-                <div class="mb-3">
-                  <a class="btn btn-primary me-1" href="https://github.com/lukeferenc/Chatz" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Repo</a>
-                </div>
-                <p class="mb-4 text-start">
-                  Cross-platform mobile chat app. Users can share images from their library or camera and send their current location.
-                  Run it via the repo instructions with Expo.
-                </p>
-                <button class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Pokédex -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="portfolio-modal-title text-secondary mb-0" id="portfolioModal5Label">Pokédex</h2>
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <a href="https://lukeferenc.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">
-                  <img class="img-fluid rounded mb-3" src="assets/img/Pokedex.JPG" alt="Pokédex app" />
-                </a>
-                <p class="modal-tech">JavaScript · HTML · CSS · external Pokémon API</p>
-                <div class="mb-3">
-                  <a class="btn btn-primary me-1" href="https://github.com/lukeferenc/Jsproject" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Repo</a>
-                  <a class="btn btn-primary me-1" href="assets/Case Study Web Pokedex.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-book"></i> Case study</a>
-                  <a class="btn btn-primary" href="https://lukeferenc.github.io/Pokedex/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Live site</a>
-                </div>
-                <p class="mb-4 text-start">
-                  Generation 1 Pokédex built in JavaScript — browse and inspect entries loaded from an external API.
-                  Includes a written case study covering process and decisions.
-                </p>
-                <button class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/site.js"></script>
 </body>
 </html>

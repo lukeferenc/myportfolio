@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aestra — an appointment-ready soft read for women's hormonal health, built at the Hack-Nation hackathon." />
+  <meta name="author" content="Luke P.F. Pons" />
+  <meta name="theme-color" content="#f7f4f2" />
+  <title>Aestra — Luke P.F. Pons</title>
+  <link rel="canonical" href="https://lukeferenc.github.io/myportfolio/aestra.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://lukeferenc.github.io/myportfolio/aestra.html" />
+  <meta property="og:title" content="Aestra — Luke P.F. Pons" />
+  <meta property="og:description" content="Models estimate, the language model only phrases. A hackathon project for women's hormonal health." />
+  <meta property="og:image" content="https://lukeferenc.github.io/myportfolio/assets/img/aestra-home.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css?v=12" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="project-page">
+  <a class="skip" href="#content">Skip to content</a>
+
+  <div class="loader" aria-hidden="true"><span class="loader__line"></span></div>
+
+  <header class="chrome">
+    <a class="chrome__mark chrome__crumb" href="index.html" aria-label="Luke P.F. Pons — home">LP <span>/ Aestra</span></a>
+    <nav class="chrome__nav" aria-label="Primary">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <header class="p-head">
+      <p class="label reveal">Hackathon · 2026</p>
+      <h1 class="p-title reveal">Aestra</h1>
+      <p class="p-lede reveal">An appointment-ready soft read for women’s hormonal health. Built in a weekend for Hack-Nation.</p>
+    </header>
+
+    <dl class="p-meta reveal">
+      <div><dt class="label">Role</dt><dd>Product, frontend, CycleBench integration</dd></div>
+      <div><dt class="label">Team</dt><dd>Two people</dd></div>
+      <div><dt class="label">Stack</dt><dd>Python · FastAPI · scikit-learn · PyTorch</dd></div>
+      <div><dt class="label">Year</dt><dd>2026</dd></div>
+      <div><dt class="label">Links</dt><dd><a href="https://aestra-nw6b.onrender.com/" target="_blank" rel="noopener noreferrer">Live site</a> · <a href="https://github.com/lukeferenc/Aestra" target="_blank" rel="noopener noreferrer">Repository</a></dd></div>
+    </dl>
+
+    <section class="p-stage case--aestra">
+      <a class="case__frame reveal-frame" href="https://aestra-nw6b.onrender.com/" target="_blank" rel="noopener noreferrer" data-cursor="Visit live">
+        <div class="case__bar" aria-hidden="true"><i></i><i></i><i></i><span>aestra-nw6b.onrender.com</span></div>
+        <div class="case__shot">
+          <img src="assets/img/aestra-home.jpg?v=3" alt="Aestra home — your story, one clear brief" width="1600" height="1247" decoding="async" data-parallax />
+        </div>
+      </a>
+    </section>
+
+    <section class="p-section">
+      <div class="reveal">
+        <p class="label">Context</p>
+        <h2 class="p-heading">Years of symptoms, one ten-minute appointment</h2>
+      </div>
+      <div class="p-body reveal">
+        <p>
+          The Hack-Nation brief was Open AI Infrastructure for Women’s Hormonal
+          Health. It opened with Sarah: 34, years of fatigue, irregular cycles,
+          migraines and brain fog, and several doctors who each saw a snapshot.
+        </p>
+        <p>
+          Hormones shift with sleep, stress and age, but appointments capture one
+          moment. We wanted Sarah to walk in with something a clinician could
+          actually use.
+        </p>
+      </div>
+    </section>
+
+    <section class="p-split">
+      <div class="p-split__text">
+        <div class="reveal">
+          <p class="label">Concept</p>
+          <h2 class="p-heading">Tap, don’t type</h2>
+        </div>
+        <div class="p-body reveal">
+          <p>
+            Instead of an empty chat box, Aestra asks one question at a time and
+            answers come as chips: symptom, intensity, timing, last period,
+            contraception. Questions are ordered by what the models find most
+            informative, and every answer shows up in a running “what I’ve
+            noted” panel.
+          </p>
+        </div>
+      </div>
+      <div class="p-split__media">
+        <img class="reveal" src="assets/img/projects/aestra-intake.jpg" alt="Aestra intake with chip answers and a running summary" width="1800" height="1125" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section class="p-split p-split--rev">
+      <div class="p-split__text">
+        <div class="reveal">
+          <p class="label">Approach</p>
+          <h2 class="p-heading">Models estimate, the language model only phrases</h2>
+        </div>
+        <div class="p-body reveal">
+          <p>
+            A chatbot can summarise a health history, but it can’t reliably
+            rebuild a timeline or keep from inventing findings. So the language
+            model never computes anything.
+          </p>
+          <p>
+            CycleBench, the deterministic engine underneath, builds the timeline
+            and cycle windows. Specialist models estimate phase and risk, and an
+            evidence graph links each claim to its source. The LLM turns that into
+            plain-language questions to ask the doctor.
+          </p>
+        </div>
+      </div>
+      <div class="p-split__media p-split__media--tall">
+        <img class="reveal" src="assets/img/projects/aestra-softread.jpg" alt="Aestra soft read with model signals, medical foundation and questions for the doctor" width="984" height="1800" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section class="p-section">
+      <div class="reveal">
+        <p class="label">Architecture</p>
+        <h2 class="p-heading">Every claim traces back to a source</h2>
+      </div>
+      <div class="p-body reveal">
+        <p>
+          Chips go to a FastAPI endpoint, through the engine, out to the
+          specialist models and the evidence graph, and only then to the phrasing
+          step. A built-in leakage audit rejects any model that peeks at future
+          data, the trick that makes naive models look smarter than they are.
+        </p>
+      </div>
+    </section>
+
+    <div class="p-wide">
+      <img class="reveal" src="assets/img/projects/aestra-arch.jpg?v=2" alt="Aestra architecture: chips, FastAPI, deterministic engine, models and evidence graph, phrasing" width="1800" height="1042" loading="lazy" decoding="async" />
+    </div>
+
+    <section class="p-section">
+      <div class="reveal">
+        <p class="label">Outcome</p>
+        <h2 class="p-heading">Honest numbers, not hype</h2>
+      </div>
+      <div class="p-body reveal">
+        <p>We shipped a live demo, and reported results as they were:</p>
+        <ul class="p-list">
+          <li>PCOS-risk model at 0.86 balanced accuracy</li>
+          <li>Hormonal-state model at 0.28, reported as barely above chance</li>
+          <li>10 leakage and safety assertions in the audit</li>
+          <li>About 78 tests, all reproducible offline without API keys</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="p-gallery">
+      <figure class="reveal"><img src="assets/img/projects/aestra-mobile.jpg" alt="Aestra home on a phone" width="831" height="1800" loading="lazy" decoding="async" /></figure>
+      <figure class="reveal"><img src="assets/img/projects/aestra-softread.jpg" alt="Aestra soft read panel" width="984" height="1800" loading="lazy" decoding="async" /></figure>
+    </div>
+
+    <section class="p-credits">
+      <p class="p-credits__intro label reveal">Made at Hack-Nation</p>
+      <div class="about__list reveal">
+        <h3 class="about__list-title">Team</h3>
+        <div class="about__cols">
+          <div>
+            <h4 class="about__sub">Product, frontend, integration</h4>
+            <p>Luke P.F. Pons</p>
+          </div>
+          <div>
+            <h4 class="about__sub">Model-pFL</h4>
+            <p>Hamza</p>
+          </div>
+        </div>
+      </div>
+      <div class="about__list reveal">
+        <h3 class="about__list-title">Built on</h3>
+        <div class="about__cols">
+          <div>
+            <h4 class="about__sub">Data</h4>
+            <p>mcPHASES, NHANES, Kaggle PCOS</p>
+          </div>
+          <div>
+            <h4 class="about__sub">Stack</h4>
+            <p>Python, FastAPI, scikit-learn, PyTorch</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="myflix.html" aria-label="Next project: myFlix">
+      <span class="next__text" aria-hidden="true">
+        <span class="next__line next__line--a" data-split>Next project</span>
+        <span class="next__line next__line--b" data-split>myFlix</span>
+      </span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__contact">
+      <p class="label site-footer__muted">Contact</p>
+      <a href="mailto:luke.peter.pons@gmail.com">luke.peter.pons@gmail.com</a>
+    </div>
+    <p class="site-footer__social">
+      <a href="https://www.linkedin.com/in/luke-pons-850216206" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      /
+      <a href="https://github.com/lukeferenc" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+    <p class="label site-footer__status"><span class="site-footer__dot" aria-hidden="true"></span><span class="site-footer__muted">Available</span> for work</p>
+  </footer>
+
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <script src="js/site.js?v=12"></script>
+</body>
+</html>

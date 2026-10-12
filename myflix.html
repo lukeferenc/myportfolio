@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="myFlix — a film catalog with an Angular client and Express API, rebuilt in 2026 with a Letterboxd-leaning UI." />
+  <meta name="author" content="Luke P.F. Pons" />
+  <meta name="theme-color" content="#f7f4f2" />
+  <title>myFlix — Luke P.F. Pons</title>
+  <link rel="canonical" href="https://lukeferenc.github.io/myportfolio/myflix.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://lukeferenc.github.io/myportfolio/myflix.html" />
+  <meta property="og:title" content="myFlix — Luke P.F. Pons" />
+  <meta property="og:description" content="A 2022 bootcamp app, rebuilt in 2026 with search, genre filters and a Letterboxd-leaning UI." />
+  <meta property="og:image" content="https://lukeferenc.github.io/myportfolio/assets/img/myflix.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css?v=12" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="project-page">
+  <a class="skip" href="#content">Skip to content</a>
+
+  <div class="loader" aria-hidden="true"><span class="loader__line"></span></div>
+
+  <header class="chrome">
+    <a class="chrome__mark chrome__crumb" href="index.html" aria-label="Luke P.F. Pons — home">LP <span>/ myFlix</span></a>
+    <nav class="chrome__nav" aria-label="Primary">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <header class="p-head">
+      <p class="label reveal">Angular · 2026 refresh</p>
+      <h1 class="p-title reveal">myFlix</h1>
+      <p class="p-lede reveal">A personal film diary. Browse the catalog, save favourites, dig into directors and genres.</p>
+    </header>
+
+    <dl class="p-meta reveal">
+      <div><dt class="label">Role</dt><dd>Solo, design, client and API</dd></div>
+      <div><dt class="label">Client</dt><dd>Angular · TypeScript · Angular Material</dd></div>
+      <div><dt class="label">API</dt><dd>Node · Express · JWT</dd></div>
+      <div><dt class="label">Year</dt><dd>2022, rebuilt 2026</dd></div>
+      <div><dt class="label">Links</dt><dd><a href="https://lukeferenc.github.io/myFlix-Angular-client2/" target="_blank" rel="noopener noreferrer">Live site</a> · <a href="https://github.com/lukeferenc/myFlix-Angular-client2" target="_blank" rel="noopener noreferrer">Client</a> · <a href="https://github.com/lukeferenc/myFlix-API" target="_blank" rel="noopener noreferrer">API</a></dd></div>
+    </dl>
+
+    <section class="p-stage case--myflix">
+      <a class="case__frame reveal-frame" href="https://lukeferenc.github.io/myFlix-Angular-client2/" target="_blank" rel="noopener noreferrer" data-cursor="Visit live">
+        <div class="case__bar" aria-hidden="true"><i></i><i></i><i></i><span>lukeferenc.github.io/myFlix</span></div>
+        <div class="case__shot">
+          <img src="assets/img/myflix.png?v=4" alt="myFlix film catalog with poster grid" width="1024" height="581" decoding="async" />
+        </div>
+      </a>
+    </section>
+
+    <section class="p-section">
+      <div class="reveal">
+        <p class="label">Context</p>
+        <h2 class="p-heading">A bootcamp app that had quietly broken</h2>
+      </div>
+      <div class="p-body reveal">
+        <p>
+          myFlix started in 2022 as my Career Foundry full-stack project. By
+          2026 the live link pointed at an old build with no API behind it, so
+          sign-up failed and half the posters were gone.
+        </p>
+        <p>
+          Rather than start over, I rebuilt it: a fresh API, a cleaner client, and
+          a look borrowed from the film app I actually use.
+        </p>
+      </div>
+    </section>
+
+    <section class="p-split">
+      <div class="p-split__text">
+        <div class="reveal">
+          <p class="label">Concept</p>
+          <h2 class="p-heading">Borrowing Letterboxd’s calm</h2>
+        </div>
+        <div class="p-body reveal">
+          <p>
+            Dark charcoal, a serif headline, one green call to action, and posters
+            doing the talking. The welcome page says what the app is in one line,
+            and signing up drops you straight into the catalog.
+          </p>
+        </div>
+      </div>
+      <div class="p-split__media" style="--split-bg: var(--dark)">
+        <img class="reveal" src="assets/img/projects/myflix-welcome.jpg" alt="myFlix welcome page: track films you've watched, save those you want to see" width="1800" height="1125" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section class="p-split p-split--rev">
+      <div class="p-split__text">
+        <div class="reveal">
+          <p class="label">Build</p>
+          <h2 class="p-heading">Small fixes that make it feel solid</h2>
+        </div>
+        <div class="p-body reveal">
+          <p>
+            Search and genre chips filter the 40-title catalog instantly.
+            Favourites sync from the API response instead of guessing locally, and
+            route guards keep signed-out visitors on the welcome page.
+          </p>
+          <p>
+            Renaming your account issues a fresh token, and movie ids stay stable
+            when the catalog is reseeded, so saved favourites never break.
+          </p>
+        </div>
+      </div>
+      <div class="p-split__media">
+        <img class="reveal" src="assets/img/myflix.png?v=4" alt="myFlix catalog with search and genre filters" width="1024" height="581" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section class="p-section">
+      <div class="reveal">
+        <p class="label">Outcome</p>
+        <h2 class="p-heading">From broken link to working app</h2>
+      </div>
+      <div class="p-body reveal">
+        <p>The refresh shipped as a static Angular build on GitHub Pages:</p>
+        <ul class="p-list">
+          <li>40-title seed with working posters</li>
+          <li>Search, genre filters and favourites</li>
+          <li>JWT auth with route guards and token refresh</li>
+          <li>Clear error messages when the free API is waking up</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="p-gallery">
+      <figure class="reveal" style="background: var(--dark)"><img src="assets/img/projects/myflix-mobile.jpg" alt="myFlix welcome page on a phone" width="831" height="1800" loading="lazy" decoding="async" /></figure>
+    </div>
+
+    <section class="p-credits">
+      <p class="p-credits__intro label reveal">Made solo</p>
+      <div class="about__list reveal">
+        <h3 class="about__list-title">Client</h3>
+        <div class="about__cols">
+          <div>
+            <h4 class="about__sub">Design and Angular</h4>
+            <p>Luke P.F. Pons</p>
+          </div>
+        </div>
+      </div>
+      <div class="about__list reveal">
+        <h3 class="about__list-title">API</h3>
+        <div class="about__cols">
+          <div>
+            <h4 class="about__sub">Express and JWT</h4>
+            <p>Luke P.F. Pons</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="aestra.html" aria-label="Next project: Aestra">
+      <span class="next__text" aria-hidden="true">
+        <span class="next__line next__line--a" data-split>Next project</span>
+        <span class="next__line next__line--b" data-split>Aestra</span>
+      </span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__contact">
+      <p class="label site-footer__muted">Contact</p>
+      <a href="mailto:luke.peter.pons@gmail.com">luke.peter.pons@gmail.com</a>
+    </div>
+    <p class="site-footer__social">
+      <a href="https://www.linkedin.com/in/luke-pons-850216206" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      /
+      <a href="https://github.com/lukeferenc" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+    <p class="label site-footer__status"><span class="site-footer__dot" aria-hidden="true"></span><span class="site-footer__muted">Available</span> for work</p>
+  </footer>
+
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <script src="js/site.js?v=12"></script>
+</body>
+</html>

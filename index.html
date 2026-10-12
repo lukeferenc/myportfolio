@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/site.css?v=8" />
+  <link rel="stylesheet" href="css/site.css?v=9" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -61,31 +61,27 @@
       </div>
       <ol class="index__list">
         <li class="reveal">
-          <a class="index__row" href="#aestra" data-preview="assets/img/aestra-home.jpg?v=3">
-            <span class="index__num label">I</span>
+          <a class="index__row" href="#aestra">
             <span class="index__name">Aestra</span>
-            <span class="index__type">Women’s health · Hackathon</span>
-            <span class="index__year label">2026</span>
+            <span class="index__type">Women’s health brief, built at a hackathon</span>
+            <span class="index__year">2026</span>
           </a>
         </li>
         <li class="reveal">
-          <a class="index__row" href="#myflix" data-preview="assets/img/myflix.png?v=4">
-            <span class="index__num label">II</span>
+          <a class="index__row" href="#myflix">
             <span class="index__name">myFlix</span>
-            <span class="index__type">Film catalog · Angular</span>
-            <span class="index__year label">2026</span>
+            <span class="index__type">Film catalog, Angular client and Express API</span>
+            <span class="index__year">2026</span>
           </a>
         </li>
         <li class="reveal">
           <div class="index__row index__row--soon">
-            <span class="index__num label">III</span>
             <span class="index__name">Three Kingdoms</span>
-            <span class="index__type">Fan reference · HTML, CSS, JS</span>
-            <span class="index__year label">In progress</span>
+            <span class="index__type">Fan reference across three games</span>
+            <span class="index__year">In progress</span>
           </div>
         </li>
       </ol>
-      <div class="index__preview" aria-hidden="true"><img alt="" /></div>
     </section>
 
     <section class="work" id="work" data-section="Featured">
@@ -184,6 +180,52 @@
         </p>
         <a class="link" href="assets/Resume.pdf" download="Luke-Pons-Resume.pdf">Download resume</a>
       </div>
+
+      <div class="about__lists reveal">
+        <div class="about__list">
+          <h3 class="about__list-title">Background</h3>
+          <div class="about__cols">
+            <div>
+              <h4 class="about__sub">42</h4>
+              <p>Peer-to-peer software engineering</p>
+            </div>
+            <div>
+              <h4 class="about__sub">Career Foundry</h4>
+              <p>Full-stack web development</p>
+            </div>
+            <div>
+              <h4 class="about__sub">Hackathon</h4>
+              <p>Aestra, team project, 2026</p>
+            </div>
+            <div>
+              <h4 class="about__sub">Hospitality</h4>
+              <p>Calm under pressure, people first</p>
+            </div>
+          </div>
+        </div>
+        <div class="about__list">
+          <h3 class="about__list-title">Stack</h3>
+          <div class="about__cols">
+            <div>
+              <h4 class="about__sub">Frontend</h4>
+              <p>Angular</p>
+              <p>TypeScript</p>
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div>
+              <h4 class="about__sub">Backend</h4>
+              <p>Python, FastAPI</p>
+              <p>Node, Express</p>
+              <p>JWT auth</p>
+            </div>
+            <div>
+              <h4 class="about__sub">Data</h4>
+              <p>CycleBench</p>
+              <p>Model-pFL</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact" id="contact" data-section="Contact">
@@ -191,20 +233,24 @@
       <h2 class="contact__title reveal">Say hello</h2>
       <p class="contact__note reveal">Open to roles, collaborations, and questions about the work above.</p>
       <a class="contact__mail reveal" href="mailto:luke.peter.pons@gmail.com">luke.peter.pons@gmail.com</a>
-      <div class="contact__social reveal">
-        <a class="link" href="https://github.com/lukeferenc" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="link" href="https://www.linkedin.com/in/luke-pons-850216206" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span class="label">© Luke P.F. Pons 2026</span>
-    <a class="label" href="#top">Back to top</a>
+    <div class="site-footer__contact">
+      <p class="label site-footer__muted">Contact</p>
+      <a href="mailto:luke.peter.pons@gmail.com">luke.peter.pons@gmail.com</a>
+    </div>
+    <p class="site-footer__social">
+      <a href="https://www.linkedin.com/in/luke-pons-850216206" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      /
+      <a href="https://github.com/lukeferenc" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+    <p class="label site-footer__status"><span class="site-footer__dot" aria-hidden="true"></span><span class="site-footer__muted">Available</span> for work</p>
   </footer>
 
   <div class="cursor" aria-hidden="true"><span></span></div>
 
-  <script src="js/site.js?v=8"></script>
+  <script src="js/site.js?v=9"></script>
 </body>
 </html>

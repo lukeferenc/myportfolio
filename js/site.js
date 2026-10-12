@@ -40,6 +40,13 @@
       { rootMargin: "-50% 0px -50% 0px" }
     );
     sections.forEach((el) => tracker.observe(el));
+
+    const footer = document.querySelector(".site-footer");
+    if (footer) {
+      new IntersectionObserver(([entry]) => {
+        root.classList.toggle("at-end", entry.isIntersecting);
+      }).observe(footer);
+    }
   }
 
   const parallax = reduceMotion ? [] : Array.from(document.querySelectorAll("[data-parallax]"));
@@ -112,21 +119,6 @@
       });
       target.addEventListener("mousemove", (e) => follower.moveTo(e.clientX, e.clientY));
       target.addEventListener("mouseleave", () => cursor.classList.remove("is-on"));
-    });
-  }
-
-  const preview = document.querySelector(".index__preview");
-  if (preview) {
-    const img = preview.querySelector("img");
-    const follower = lerpFollower(preview);
-    document.querySelectorAll("[data-preview]").forEach((row) => {
-      row.addEventListener("mouseenter", (e) => {
-        img.src = row.dataset.preview;
-        follower.moveTo(e.clientX + 170, e.clientY, !preview.classList.contains("is-on"));
-        preview.classList.add("is-on");
-      });
-      row.addEventListener("mousemove", (e) => follower.moveTo(e.clientX + 170, e.clientY));
-      row.addEventListener("mouseleave", () => preview.classList.remove("is-on"));
     });
   }
 })();

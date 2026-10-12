@@ -124,14 +124,6 @@ a {
   to { transform: scaleX(1); }
 }
 
-.at-end .chrome__section {
-  opacity: 0;
-}
-
-.chrome__section {
-  transition: opacity 0.3s ease;
-}
-
 .is-ready .loader {
   opacity: 0;
   visibility: hidden;
@@ -177,20 +169,6 @@ a {
 
 .chrome__nav a:hover {
   opacity: 1;
-}
-
-.chrome__section {
-  position: fixed;
-  left: var(--pad);
-  bottom: 1.25rem;
-  z-index: 100;
-  margin: 0;
-  font-size: 0.875rem;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: var(--bg);
-  mix-blend-mode: difference;
-  pointer-events: none;
 }
 
 /* Hero */
@@ -487,6 +465,75 @@ a {
   display: flex;
   gap: 1.75rem;
   margin-top: 1.5rem;
+}
+
+/* Next project */
+
+.next {
+  display: grid;
+  place-items: center;
+  margin-top: clamp(4rem, 10vh, 7rem);
+  padding: clamp(5rem, 16vh, 10rem) var(--pad);
+  background: var(--light);
+}
+
+.next__text {
+  display: grid;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.next__line {
+  grid-area: 1 / 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.next__line .char {
+  display: inline-block;
+  transition: transform 0.7s var(--ease);
+  transition-delay: calc(var(--i) * 22ms);
+}
+
+.next__line--b .char {
+  transform: translateY(110%);
+}
+
+.next:hover .next__line--a .char,
+.next:focus-visible .next__line--a .char {
+  transform: translateY(-110%);
+}
+
+.next:hover .next__line--b .char,
+.next:focus-visible .next__line--b .char {
+  transform: none;
+}
+
+html:not(.js) .next__line--b {
+  display: none;
+}
+
+@media (hover: none) {
+  .next__text {
+    overflow: visible;
+    gap: 0.25rem;
+  }
+
+  .next__line {
+    grid-area: auto;
+  }
+
+  .next__line--b {
+    font-size: 0.45em;
+    color: var(--muted);
+  }
+
+  .next__line--b .char {
+    transform: none;
+  }
 }
 
 /* Index */
@@ -788,11 +835,7 @@ a.index__row:hover .index__year {
     display: none;
   }
 
-  .chrome__section {
-    display: none;
-  }
-
-  .case__bar span {
+    .case__bar span {
     display: none;
   }
 }

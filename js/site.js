@@ -11,6 +11,18 @@
     setTimeout(ready, 2500);
   }
 
+  document.querySelectorAll("[data-split]").forEach((el) => {
+    const text = el.textContent;
+    el.textContent = "";
+    [...text].forEach((ch, i) => {
+      const span = document.createElement("span");
+      span.className = "char";
+      span.style.setProperty("--i", i);
+      span.textContent = ch === " " ? "\u00a0" : ch;
+      el.append(span);
+    });
+  });
+
   const revealables = document.querySelectorAll(".reveal, .reveal-frame");
   if ("IntersectionObserver" in window) {
     const revealer = new IntersectionObserver(
@@ -26,27 +38,6 @@
     revealables.forEach((el) => revealer.observe(el));
   } else {
     revealables.forEach((el) => el.classList.add("is-in"));
-  }
-
-  const sectionLabel = document.querySelector("[data-section-label]");
-  const sections = document.querySelectorAll("[data-section]");
-  if (sectionLabel && "IntersectionObserver" in window) {
-    const tracker = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) sectionLabel.textContent = entry.target.dataset.section;
-        });
-      },
-      { rootMargin: "-50% 0px -50% 0px" }
-    );
-    sections.forEach((el) => tracker.observe(el));
-
-    const footer = document.querySelector(".site-footer");
-    if (footer) {
-      new IntersectionObserver(([entry]) => {
-        root.classList.toggle("at-end", entry.isIntersecting);
-      }).observe(footer);
-    }
   }
 
   const parallax = reduceMotion ? [] : Array.from(document.querySelectorAll("[data-parallax]"));

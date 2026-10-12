@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/site.css?v=6" />
+  <link rel="stylesheet" href="css/site.css?v=7" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -29,8 +29,8 @@
   <header class="chrome">
     <a class="chrome__mark" href="#top" aria-label="Luke P.F. Pons — back to top">LP</a>
     <nav class="chrome__nav" aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="#index">Index</a>
+      <a href="#projects">Projects</a>
+      <a href="#work">Featured</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -50,11 +50,45 @@
           I build clear products on solid infrastructure — from research-backed
           health tools to polished web apps.
         </p>
-        <a class="hero__cue label" href="#work">Selected work <span aria-hidden="true">I — III</span></a>
+        <a class="hero__cue label" href="#projects">Projects <span aria-hidden="true">I — III</span></a>
       </div>
     </section>
 
-    <section class="work" id="work" data-section="Work">
+    <section class="index" id="projects" data-section="Projects">
+      <div class="index__head reveal">
+        <p class="label">Projects</p>
+        <p class="index__count label">03 projects</p>
+      </div>
+      <ol class="index__list">
+        <li class="reveal">
+          <a class="index__row" href="#aestra" data-preview="assets/img/aestra-home.jpg?v=3">
+            <span class="index__num label">I</span>
+            <span class="index__name">Aestra</span>
+            <span class="index__type">Women’s health · Hackathon</span>
+            <span class="index__year label">2026</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a class="index__row" href="#myflix" data-preview="assets/img/myflix.png?v=4">
+            <span class="index__num label">II</span>
+            <span class="index__name">myFlix</span>
+            <span class="index__type">Film catalog · Angular</span>
+            <span class="index__year label">2026</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <div class="index__row index__row--soon">
+            <span class="index__num label">III</span>
+            <span class="index__name">Three Kingdoms</span>
+            <span class="index__type">Fan reference · HTML, CSS, JS</span>
+            <span class="index__year label">In progress</span>
+          </div>
+        </li>
+      </ol>
+      <div class="index__preview" aria-hidden="true"><img alt="" /></div>
+    </section>
+
+    <section class="work" id="work" data-section="Featured">
       <article class="case case--aestra" id="aestra">
         <header class="case__head reveal">
           <span class="case__num label">I</span>
@@ -126,40 +160,6 @@
       </article>
     </section>
 
-    <section class="index" id="index" data-section="Index">
-      <div class="index__head reveal">
-        <p class="label">Index</p>
-        <p class="index__count label">03 projects</p>
-      </div>
-      <ol class="index__list">
-        <li class="reveal">
-          <a class="index__row" href="#aestra" data-preview="assets/img/aestra-home.jpg?v=3">
-            <span class="index__num label">I</span>
-            <span class="index__name">Aestra</span>
-            <span class="index__type">Women’s health · Hackathon</span>
-            <span class="index__year label">2026</span>
-          </a>
-        </li>
-        <li class="reveal">
-          <a class="index__row" href="#myflix" data-preview="assets/img/myflix.png?v=4">
-            <span class="index__num label">II</span>
-            <span class="index__name">myFlix</span>
-            <span class="index__type">Film catalog · Angular</span>
-            <span class="index__year label">2026</span>
-          </a>
-        </li>
-        <li class="reveal">
-          <div class="index__row index__row--soon">
-            <span class="index__num label">III</span>
-            <span class="index__name">Three Kingdoms</span>
-            <span class="index__type">Hero overview · HTML, CSS, JS</span>
-            <span class="index__year label">In progress</span>
-          </div>
-        </li>
-      </ol>
-      <div class="index__preview" aria-hidden="true"><img alt="" /></div>
-    </section>
-
     <section class="about" id="about" data-section="About">
       <p class="label reveal">About</p>
       <h2 class="about__statement reveal">
@@ -168,8 +168,15 @@
       <div class="about__grid reveal">
         <p>
           Hospitality taught me calm under pressure. Career Foundry got me into
-          full-stack web. Lately I’ve been shipping Aestra on CycleBench, and
-          tightening the craft on older apps like myFlix.
+          full-stack web. 42 changed how I learn: no teachers and no lectures,
+          just peers, projects and code reviews. It made me comfortable with not
+          knowing yet, digging through docs, and explaining my choices out loud.
+        </p>
+        <p>
+          Lately I’ve been shipping Aestra on CycleBench, tightening the craft on
+          older apps like myFlix, and building Three Kingdoms, a fan reference
+          that ties Sanguosha, Total War and Dynasty Warriors together, with 110
+          character pages so far.
         </p>
         <p>
           I’m looking for teams where clear UX and honest engineering sit in
@@ -198,6 +205,6 @@
 
   <div class="cursor" aria-hidden="true"><span></span></div>
 
-  <script src="js/site.js?v=6"></script>
+  <script src="js/site.js?v=7"></script>
 </body>
 </html>

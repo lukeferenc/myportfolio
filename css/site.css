@@ -217,10 +217,9 @@ a {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(4.2rem, 21vw, 20rem);
-  line-height: 0.84;
-  letter-spacing: -0.025em;
-  text-transform: uppercase;
+  font-size: clamp(3.6rem, 12vw, 11.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
 }
 
 .hero__line {
@@ -329,14 +328,13 @@ a {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(3.5rem, 11vw, 10rem);
-  line-height: 0.85;
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
+  line-height: 1;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
 }
 
 .case__tag {
-  padding-bottom: 0.9rem;
+  padding-bottom: 0.6rem;
   text-align: right;
 }
 
@@ -639,10 +637,9 @@ a.index__row:hover .index__name {
   margin: 1.25rem 0 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(4rem, 15vw, 14rem);
-  line-height: 0.85;
+  font-size: clamp(3.2rem, 9vw, 8rem);
+  line-height: 0.95;
   letter-spacing: -0.025em;
-  text-transform: uppercase;
 }
 
 .contact__note {

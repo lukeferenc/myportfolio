@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/site.css?v=12" />
+  <link rel="stylesheet" href="css/site.css?v=13" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body class="project-page">
@@ -54,7 +54,7 @@
       <a class="case__frame reveal-frame" href="https://lukeferenc.github.io/myFlix-Angular-client2/" target="_blank" rel="noopener noreferrer" data-cursor="Visit live">
         <div class="case__bar" aria-hidden="true"><i></i><i></i><i></i><span>lukeferenc.github.io/myFlix</span></div>
         <div class="case__shot">
-          <img src="assets/img/myflix.png?v=4" alt="myFlix film catalog with poster grid" width="1024" height="581" decoding="async" />
+          <img src="assets/img/projects/myflix-catalog.jpg?v=2" alt="myFlix film catalog with poster grid, search and genre filters" width="1800" height="1023" decoding="async" data-parallax />
         </div>
       </a>
     </section>
@@ -92,7 +92,7 @@
         </div>
       </div>
       <div class="p-split__media" style="--split-bg: var(--dark)">
-        <img class="reveal" src="assets/img/projects/myflix-welcome.jpg" alt="myFlix welcome page: track films you've watched, save those you want to see" width="1800" height="1125" loading="lazy" decoding="async" />
+        <img class="reveal" src="assets/img/projects/myflix-welcome.jpg?v=2" alt="myFlix welcome page: track films you've watched, save those you want to see" width="1800" height="1023" loading="lazy" decoding="async" />
       </div>
     </section>
 
@@ -100,22 +100,61 @@
       <div class="p-split__text">
         <div class="reveal">
           <p class="label">Build</p>
-          <h2 class="p-heading">Small fixes that make it feel solid</h2>
+          <h2 class="p-heading">Find a film in two keystrokes</h2>
         </div>
         <div class="p-body reveal">
           <p>
-            Search and genre chips filter the 40-title catalog instantly.
-            Favourites sync from the API response instead of guessing locally, and
-            route guards keep signed-out visitors on the welcome page.
+            Search matches titles and directors as you type, and genre chips
+            narrow the 40-title catalog instantly. The count updates with every
+            filter, so you always know how much is left.
           </p>
           <p>
-            Renaming your account issues a fresh token, and movie ids stay stable
-            when the catalog is reseeded, so saved favourites never break.
+            Hearts sync from the API response instead of guessing locally, and
+            route guards keep signed-out visitors on the welcome page.
           </p>
         </div>
       </div>
-      <div class="p-split__media">
-        <img class="reveal" src="assets/img/myflix.png?v=4" alt="myFlix catalog with search and genre filters" width="1024" height="581" loading="lazy" decoding="async" />
+      <div class="p-split__media" style="--split-bg: var(--dark)">
+        <img class="reveal" src="assets/img/projects/myflix-catalog.jpg?v=2" alt="myFlix catalog with search and genre chips" width="1800" height="1023" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section class="p-section">
+      <div class="reveal">
+        <p class="label">Profile</p>
+        <h2 class="p-heading">Your taste, at a glance</h2>
+      </div>
+      <div class="p-body reveal">
+        <p>
+          The profile leads with what matters: your favourites as posters, plus a
+          quick count of how many directors and genres they span. Account details
+          sit quietly to the side, and deleting your account is a small link
+          rather than a big red button.
+        </p>
+      </div>
+    </section>
+
+    <div class="p-wide">
+      <img class="reveal" src="assets/img/projects/myflix-profile.jpg?v=3" alt="myFlix profile with avatar, stats and favourite film posters" width="1800" height="1225" loading="lazy" decoding="async" />
+    </div>
+
+    <section class="p-split">
+      <div class="p-split__text">
+        <div class="reveal">
+          <p class="label">Details</p>
+          <h2 class="p-heading">Edit only what changes</h2>
+        </div>
+        <div class="p-body reveal">
+          <p>
+            The edit form comes pre-filled and sends only the fields you touched.
+            Rename your account and the API issues a fresh token, so you stay
+            signed in. Movie ids stay stable when the catalog is reseeded, so
+            saved favourites never break.
+          </p>
+        </div>
+      </div>
+      <div class="p-split__media" style="--split-bg: var(--dark)">
+        <img class="reveal" src="assets/img/projects/myflix-edit.jpg?v=3" alt="myFlix edit profile dialog" width="1800" height="1225" loading="lazy" decoding="async" />
       </div>
     </section>
 
@@ -134,10 +173,6 @@
         </ul>
       </div>
     </section>
-
-    <div class="p-gallery">
-      <figure class="reveal" style="background: var(--dark)"><img src="assets/img/projects/myflix-mobile.jpg" alt="myFlix welcome page on a phone" width="831" height="1800" loading="lazy" decoding="async" /></figure>
-    </div>
 
     <section class="p-credits">
       <p class="p-credits__intro label reveal">Made solo</p>
@@ -184,6 +219,6 @@
 
   <div class="cursor" aria-hidden="true"><span></span></div>
 
-  <script src="js/site.js?v=12"></script>
+  <script src="js/site.js?v=13"></script>
 </body>
 </html>
